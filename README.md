@@ -1,6 +1,6 @@
 # PA02: Analysis of Network I/O Primitives using `perf` Tool
 
-**Student Name:**  
+**Name:**  
 Name: Aditya Malik  
 
 **Roll Number:** MT25011  
@@ -59,7 +59,7 @@ In accordance with the strict naming conventions of the assignment:
 
 ```
 
-4. Part A – Implementation Summary
+## 4. Part A – Implementation Summary
 A1: Two-Copy (Baseline)
 
 Mechanism: Uses standard send() and recv() primitives.
@@ -80,7 +80,7 @@ Mechanism: Uses sendmsg() with the MSG_ZEROCOPY flag.
 
 Behavior: Pages are pinned in memory, and the NIC reads directly via DMA. Completion notifications are tracked using the socket Error Queue (MSG_ERRQUEUE) to ensure safe buffer reuse.
 
-5. Key Experimental Findings
+## 5. Key Experimental Findings
 
 Efficiency Threshold: Zero-copy (A3) begins to outperform the baseline (A1) only when message sizes exceed 16 KB.
 
@@ -90,7 +90,7 @@ Best Overall Performer: Scatter-Gather (A2) provides the most consistent perform
 
 Micro-architectural Impact: A3 significantly reduces L1 data cache misses. However, at higher thread counts (≥ 8), it leads to heavy context switching (~65k switches) and cache contention.
 
-6. How to Run
+## 6. How to Run
 git clone https://github.com/adi620/GRS_PA02.git
 cd GRS_PA02
 make clean
