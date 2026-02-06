@@ -1,9 +1,3 @@
-/*
- * MT25011 - Replace XXX with your roll number
- * PA02 - Part A3: Zero-Copy Implementation (Client)
- * Client uses standard recv (zero-copy is typically sender-side optimization)
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

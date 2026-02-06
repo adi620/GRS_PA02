@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-MT25011 - PA02 Part D: Comprehensive Performance Visualization
-Creates all 4 required plots from experimental data
-Data extracted from MT25011_PartC_Perf_Metrics.csv
-"""
 
 import matplotlib.pyplot as plt
 import numpy as np

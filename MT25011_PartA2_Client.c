@@ -1,9 +1,3 @@
-/*
- * MT25011 - Replace XXX with your roll number
- * PA02 - Part A2: One-Copy Implementation (Client)
- * Uses recvmsg() with pre-registered buffer (eliminates one copy)
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

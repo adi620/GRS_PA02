@@ -1,8 +1,3 @@
-/*
- * MT25011 - Replace XXX with your roll number
- * PA02 - Part A1: Two-Copy Implementation (Client)
- * Uses recv() socket primitive (baseline with two copies)
- */
 
 #include <stdio.h>
 #include <stdlib.h>
