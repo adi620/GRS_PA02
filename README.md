@@ -100,3 +100,12 @@ make all
 sudo ./MT25011_PartC_Experiment.sh
 python3 MT25011_PartD_Plots.py
 ```
+To run the entire pipeline (Data Collection + Plotting) with a single command:
+
+```bash
+
+git clone https://github.com/adi620/GRS_PA02.git
+cd GRS_PA02
+chmod +x MT25011_Run_All.sh
+./MT25011_Run_All.sh
+```
